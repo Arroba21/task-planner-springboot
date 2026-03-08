@@ -1,0 +1,139 @@
+/* ===== FONDO GENERAL ===== */
+
+body {
+  background:#3d7df7;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* ===== TARJETAS ===== */
+
+.card {
+  border: none;
+  border-radius: 14px;
+  transition: all .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ===== FORMULARIO ===== */
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #dfe5ec;
+  transition: all .2s ease;
+}
+
+.form-control:focus {
+  border-color: #4e8df5;
+  box-shadow: 0 0 0 3px rgba(78,141,245,0.15);
+}
+
+/* ===== BOTONES ===== */
+
+.btn {
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all .2s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg,#3d7df7,#4e8df5);
+  border: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* ===== LISTA DE TAREAS ===== */
+
+.list-group-item {
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 8px;
+  background: #f7f9fc;
+  transition: all .2s ease;
+}
+
+.list-group-item:hover {
+  background: #eef3ff;
+  transform: scale(1.01);
+}
+
+/* tarea completada */
+
+.completed-item {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* ===== CALENDARIO ===== */
+
+#calendar {
+  padding: 10px;
+}
+
+/* eventos */
+
+.fc-event {
+  border-radius: 8px;
+  border: none;
+  padding: 3px 6px;
+  font-size: 0.85rem;
+}
+
+/* evento normal */
+
+.fc-event-main {
+  background: linear-gradient(135deg,#4e8df5,#3d7df7);
+}
+
+/* evento hover */
+
+.fc-event:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== HEADER CALENDARIO ===== */
+
+.fc-toolbar-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* ===== ANIMACIÓN SUAVE ===== */
+
+.pop {
+  animation: popIn .25s ease-out;
+}
+
+@keyframes popIn {
+  from {
+    transform: translateY(6px);
+    opacity: .0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ===== SCROLL BONITO ===== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cfd7e6;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aeb9d3;
+}
