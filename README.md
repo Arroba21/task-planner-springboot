@@ -1,4 +1,4 @@
- Spring Boot + Calendar
+ Spring Boot + Calendario
 
 Aplicación full-stack para gestionar tareas con calendario.  
 Permite crear tareas con hora de inicio y fin, visualizarlas en un calendario interactivo y moverlas mediante drag & drop.
